@@ -89,6 +89,10 @@ textarea {
 
  /* -------------------- General Styles -------------------- */
  
+ /*pink  #d76d79*/
+ /*navy  #03256c*/
+ /*light blue #d8dcff*/
+
 html {
 	font-size: 16px;
 }
@@ -99,11 +103,6 @@ body {
   font-family: 'Poppins', sans-serif;
   font-size: 1em;
   text-align: left;
-}
-
-.content-wrapper {
-  margin: 50px 0;
-  width: 90%;
 }
 
 ul {
@@ -127,9 +126,11 @@ h2 {
 }
 
 h3 {
-  color: #d76d79;
+  color: #d76d79; 
   font-family: 'Playfair Display', serif;
   font-size: 1.6em;
+  text-align: center;
+  width: 100%;
 }
 
 h4{
@@ -137,15 +138,13 @@ h4{
 }
 
 p {
-	font-size: 1em;
-  
+  font-size: 1em;
+  padding: 0 15px;
 }
 
 address {
   font-style: normal;
 }
- /* About Section Styles */
-
 
 
 
@@ -171,7 +170,7 @@ header nav {
   font-weight: 700;
   justify-content: space-around;
   text-transform: uppercase;
-  width:70%;
+  width:90%;
 }
 header nav ul{
   display:flex;
@@ -196,12 +195,13 @@ footer {
   position: relative;
 }
 */
-#hero-section .content-wrapper {
+#hero-section  {
   background: url("../img/hero-image.jpg") center no-repeat white;
   background-size: cover;
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-end;
+  padding: 50px 0;
 }
 /*
 .background {
@@ -218,71 +218,78 @@ footer {
 */
 h1, h2{
   color: white;
+  margin-right: 15px;
   position: relative;
 }
 
 h2 {
   text-align: right;
+  width: 70%;
 }
 
  /* -------------------- Portfolio Section -------------------- */
 
- #portfolio .content-wrapper{
-  background-color: white;
+ #portfolio {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  margin-right: 0;
 }
 
 #portfolio article{
+
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   margin: 30px 0;
 }
 
-#portfolio p{
-  text-align: center;
-}
-
 #portfolio figure{
-  margin: 0;
+  margin: 20px 0 0 0;
 }
 #portfolio img{
   margin: 5px 0;
   width: 100%;
 }
 
-/* -------------------- About Section -------------------- */
+#portfolio p{
+  text-align: justify;
+}
 
-#about .content-wrapper{
+/* -------------------- About Section -------------------- */
+#about {
+  background-color: white;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  margin-right: 0;
+  
 }
 
-#about .article {
+#about article {
   display: flex;
+  flex-flow: row wrap;
   justify-content: center;
-  width: 100%;
+  margin-bottom: 20px;
+}
+
+#about figure {
+  display:flex;
+  justify-content: center;
 }
 
 #about img{
-  border: 2px solid white;
+  border: 3px solid #d8dcff;
   width: 70%;
  }
 
  #about p {
-   line-height: 1.7;
-   text-align: justify;
+  margin-right: 0; 
+  line-height: 1.7;
  }
 
 /* -------------------- Contact Styles -------------------- */
 
 /* contact details */
-#contact .content-wrapper{
+#contact {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -292,19 +299,21 @@ h2 {
 #contact .contact-details {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  
 }
 
-#contact .contact-details h3, #contact .social h3{
-  text-align: center;
-  width: 100%;
+#contact address {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+
 }
 
 #contact .contact-details p {
   align-items: center;
   display: flex;
   justify-content: center;
-  margin: 0;
+  margin: 0 0 0 30px;
 }
 
 #contact .contact-details span {
@@ -322,8 +331,6 @@ h2 {
 .social-icons {
   display: flex;
   justify-content: center;
-  margin: 0;
-  width: 80%
 }
 
 #contact .social-icons p  {
@@ -333,7 +340,8 @@ h2 {
   font-size: 3em;
   justify-content: center;
   margin: 0;
-  width: 3em;
+  padding: 0;
+  width: 2em;
 }
 /* ==========================================================================
    Helper classes
@@ -422,6 +430,135 @@ h2 {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+
+
+   /* -------------------- Styles for Tablets -------------------- */
+
+@media only screen and (min-width: 768px) {
+
+  /*hero section*/
+
+  #hero-section {
+    align-items: flex-end;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 100px 0;
+    
+  }
+
+  h1{
+    text-align: right;
+  }
+  h1, h2{
+    margin-right: 25px;
+    width: 40%;
+  }
+
+  
+  /*portfolio*/
+
+  #portfolio {
+    padding: 25px 0;
+  }
+
+  #portfolio .project-description {
+    padding-bottom: 15px;
+  }
+
+  #portfolio a {
+    display:flex;
+    justify-content: center;
+  }
+  #portfolio img {
+    border: solid 2px #03256c;
+    width: 80%;
+  }
+
+  #portfolio p{
+    margin: 0 30px;
+  }
+
+  /*about*/
+  #about h3{
+    margin-top: 50px;
+  }
+
+  #about img{
+    width: 60%;
+  }
+
+  #about p{
+    margin: 20px 30px 30px 30px;
+  }
+
+   /*contact*/
+
+   #contact {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 30px;
+  }
+  
+  #contact .contact-details {
+    display: flex;
+    flex-flow: column wrap;
+    width: 50%;
+  }
+
+  #contact .social {
+    width: 50%;
+  }
+
+  .social-icons{
+    padding-top: 15px;
+  }
+
+}
+
+
+/* -------------------- Styles for Desktop -------------------- */
+@media only screen and (min-width: 1200px) {
+
+ /*hero-section*/
+
+  p {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 3em;
+  }
+
+  h4 {
+    font-size: 2em;
+  }
+  #hero-section {
+    padding: 150px 0;
+  }
+
+  #hero-section h1{
+    font-size: 4em;
+  }
+
+  #hero-section h2{
+    font-size: 2.5em;
+  }
+
+  /*about section*/
+  #about p {
+    padding: 30px;
+}
+
+#contact .contact-details p {
+  margin-left: 130px;
+}
+
+.social-icons{
+  padding-top: 45px;
+}
+}
+
+
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
