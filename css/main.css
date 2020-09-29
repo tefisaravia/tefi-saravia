@@ -87,11 +87,17 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
- /* -------------------- General Styles -------------------- */
+
+/* -------------------- Mobile Styles -------------------- */
+
+/* -------------------- General Styles -------------------- */
  
- /*pink  #d76d79*/
- /*navy  #03256c*/
- /*light blue #d8dcff*/
+/* ---------- Brand Colors ------------
+honey #d7cec7
+bright orange  #F79E02
+purplish  #17178C
+deep blue #000080
+*/
 
 html {
 	font-size: 16px;
@@ -99,30 +105,31 @@ html {
  
 body {
   background-color: white;
-  color: #000080;
+  color: #67697C;
   font-family: 'Poppins', sans-serif;
   font-size: 1em;
+  font-weight: 300;
   text-align: left;
 }
 
 a {
-  color: #03256c;
   text-decoration: none;
 }
 
 h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 2.5em;
+  font-weight: 100;
 }
 
 h2 {
-  color: #0074E1;
+  color: #67697C;
   font-size: 1.875em;
   text-align: center;
 }
 
 h3 {
-  color: #1C9CE5;
+  color: #F79E02;
   font-size: 1.4em;
   font-weight: 500;
   text-align: center;
@@ -138,140 +145,34 @@ address {
 }
 
 
-/* -------------------- Base Header - Footer Styles -------------------- */
+/* -------------------- Base Header Styles -------------------- */
 
 header{
-  background-color: #000080;
+  background-color: #d7cec7;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
   padding: 15px 0 25px 0;
 }
 
 header h1{
-  font-size: 2em;
-  padding-left: 15px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1.5em;
+  text-align: center;
 
 }
 
 /* -------------------- Navigation menu -------------------- */
 
-#menuToggle
-{
-  display: block;
-  position: relative;
-  top: 10px;
-  left: 50px; /*lo pase a 270 para pasarlo a la derecha pero la verdad todo lo deberia de volver responsive, solo crear un branch*/ 
-  width: 60%;
-  margin-right: 0;
-  z-index: 1;
-  
-  -webkit-user-select: none;
-  user-select: none;
-}
 
-#menuToggle a
-{
-  transition: color 0.3s ease;
-}
-
-#menuToggle a:hover
-{
-  color: #d76d79;
-}
-
-#menuToggle input
-{
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
-  
-  cursor: pointer;
-  
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
-  
-  -webkit-touch-callout: none;
-}
-
- /* hamburger design */
-#menuToggle span
-{
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-
-  background: white;
-  border-radius: 3px;
-  
-  z-index: 1;
-  
-  transform-origin: 4px 0px;
-
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
-}
-
-#menuToggle span:first-child
-{
-  transform-origin: 0% 0%;
-}
-
-#menuToggle span:nth-last-child(2)
-{
-  transform-origin: 0% 100%;
-}
-
-/* Transform all the slices of hamburger into a crossmark.*/
- #menuToggle input:checked ~ span
- {
-   opacity: 1;
-   transform: rotate(45deg) translate(-2px, -1px);
-   background: #03256c;
- }
-
- /* hide the middle one. */
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-/* Last one should go the other direction*/
- #menuToggle input:checked ~ span:nth-last-child(2)
- {
-   transform: rotate(-45deg) translate(0, -1px);
- }
- 
- #menu
-{
-  position: absolute;
-  width: 300px;
-  margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
-  
-  background: white;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
-  
-  transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-}
-
-/*
 header nav {
   align-items: center;
   display:flex;
   font-size: 1.125em;
   justify-content: space-around;
-  
-  width:90%;
+
 }
 
 
@@ -282,29 +183,20 @@ header nav ul{
   list-style-type: none;
   width: 100%;
 }
-*/
 
-#menu li {
+
+nav ul li a  {
+  color: white;
   font-weight: 500;
   padding: 10px 0;
   text-transform: uppercase;
 }
 
-/*
- * And let's slide it in from the left
- */
- #menuToggle input:checked ~ ul
- {
-   transform: none;
- }
 
-footer {
-  display: flex;
-  justify-content: center;
-  margin: 20px 0;
+nav ul li a:hover
+{
+  color: #F79E02;
 }
-
-/* -------------------- Mobile Styles -------------------- */
 
 /* -------------------- Hero Section -------------------- */
 
@@ -312,9 +204,8 @@ footer {
 #hero-section {
   align-items: flex-start;
   display:flex;
-  justify-content: flex-end;
-  margin-bottom: 50px;
-  padding: 50px 0;
+  margin-bottom: 200px;
+  padding-top: 80px;
   position: relative;
 }
 
@@ -327,18 +218,10 @@ footer {
   right: 0px;
   bottom: 0px;
   left: 0px;
+  padding: 250px 0;
+  z-index: -1;
 }
 
-/*
-#hero-section  {
-  background: url("../img/laptop-image.jpg") center no-repeat white;
-  background-size: cover;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  padding: 50px 0;
-}
-*/
 #hero-section h1, #hero-section h2{
   padding-left: 15px;
   position: relative;
@@ -349,7 +232,7 @@ footer {
 }
 
 #hero-section h2 {
-  color: #0074E1;
+  color: #67697C;
   font-weight: 500;
   text-align: left;
   width: 70%;
@@ -361,7 +244,7 @@ footer {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  margin-bottom: 20px;
+  margin: 50px 0;
 }
 
 #portfolio article{
@@ -381,14 +264,17 @@ footer {
   width: 100%;
 }
 
+#portfolio-description {
+  padding: 0 25px;
+}
+
 #portfolio p{
   text-align: justify;
-  width: 80%;
 }
 
 /* -------------------- About Section -------------------- */
 #about {
-  background-color: #000080;
+  background-color: #d7cec7;;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -401,18 +287,18 @@ footer {
   margin-bottom: 20px;
 }
 
-#about h2 {
-  color: white;
-}
-
 #about figure {
   display:flex;
   justify-content: center;
 }
 
 #about img{
-  border: 3px solid #0074E1;
+  border: 3px solid white;
   width: 70%;
+ }
+
+ #about h2{
+   color: white;
  }
 
  #about p {
@@ -477,6 +363,7 @@ footer {
 #contact .social-icons p  {
   align-items: center;
   border-radius: 100%;
+ 
   display: flex;
   font-size: 3em;
   justify-content: center;
@@ -484,6 +371,19 @@ footer {
   padding: 0;
   width: 2em;
 }
+
+#contact .social-icons a {
+  color: #67697C;
+}
+/* -------------------- Footer Styles -------------------- */
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -576,6 +476,26 @@ footer {
    /* -------------------- Styles for Tablets -------------------- */
 
 @media only screen and (min-width: 768px) {
+   /*header section*/
+
+   header{
+    display: flex; 
+    flex-flow: row nowrap;
+    justify-content: space-between;
+   }
+
+   header h1{
+     font-size: 2em;
+     padding-left: 50px;
+   }
+
+   nav {
+    width: 50%;
+  }
+
+  nav a{
+    font-size: 1.2em;
+  }
 
   /*hero section*/
 
@@ -583,7 +503,11 @@ footer {
     align-items: flex-start;
     display: flex;
     flex-flow: column wrap;
-    padding: 100px 0 150px 25px;
+    /*padding: 100px 0 150px 25px;*/
+  }
+
+  #hero-section h1, #hero-section h2 {
+    padding-left: 35px;
   }
   
   /*portfolio*/
@@ -592,6 +516,9 @@ footer {
     padding: 25px 0;
   }
 
+  #portfolio #portfolio-description{
+    margin: 0 80px;
+  }
   #portfolio .project-description {
     padding-bottom: 15px;
   }
@@ -603,6 +530,10 @@ footer {
   #portfolio img {
     border: solid 2px #03256c;
     width: 80%;
+  }
+
+  #portfolio h2 {
+    width: 100%;
   }
 
   #portfolio p{
@@ -619,7 +550,7 @@ footer {
   }
 
   #about p{
-    margin: 20px 30px 30px 30px;
+    padding: 10px 100px;
   }
 
    /*contact*/
@@ -669,7 +600,8 @@ footer {
   }
 /*hero-section*/
   #hero-section {
-    padding: 150px 0;
+    margin-bottom: 0;
+    padding: 170px 0;
   }
 
   #hero-section h1{
@@ -687,17 +619,14 @@ footer {
 
     /*portfolio section*/
 
-    #portfolio h2 {
-      width: 100%;
-    }
+   
     #portfolio p {
-      margin: 0;
-      width: 60%;
+      padding: 0 80px;
     }
   
     /*about section*/
     #about p {
-      padding: 30px;
+      width: 60%;
   }
 
   /*contact section*/
