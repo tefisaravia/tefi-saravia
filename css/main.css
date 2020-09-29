@@ -125,6 +125,7 @@ h1 {
 h2 {
   color: #67697C;
   font-size: 1.875em;
+  padding-top: 10px;
   text-align: center;
 }
 
@@ -150,7 +151,7 @@ address {
 header{
   background-color: #d7cec7;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   justify-content: center;
   padding: 15px 0 25px 0;
 }
@@ -204,7 +205,7 @@ nav ul li a:hover
 #hero-section {
   align-items: flex-start;
   display:flex;
-  margin-bottom: 200px;
+  margin-bottom: 250px;
   padding-top: 80px;
   position: relative;
 }
@@ -218,7 +219,7 @@ nav ul li a:hover
   right: 0px;
   bottom: 0px;
   left: 0px;
-  padding: 250px 0;
+  padding: 250px 0 300px 0;
   z-index: -1;
 }
 
@@ -506,6 +507,10 @@ footer {
     /*padding: 100px 0 150px 25px;*/
   }
 
+  .background {
+    padding-bottom: 350px;
+  }
+
   #hero-section h1, #hero-section h2 {
     padding-left: 35px;
   }
@@ -528,11 +533,12 @@ footer {
     justify-content: center;
   }
   #portfolio img {
-    border: solid 2px #03256c;
+    border: solid 2px #67697C;
     width: 80%;
   }
 
   #portfolio h2 {
+    padding-top: 30px;
     width: 100%;
   }
 
