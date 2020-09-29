@@ -32,14 +32,25 @@
 
     <!-- HEADER -->
   <header> 
-    <nav>
-      <ul>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
+    <!--<h1>Tefi Saravia</h1>-->
+    <nav role="navigation">
+      <div id="menuToggle">
+        <!-- A fake / hidden checkbox is used as click reciever, to use the :checked selector on it. -->
+        <input type="checkbox" />
+        <!-- Hamburger spans-->
+        <span></span>
+        <span></span>
+        <span></span>
         
-      </ul>
+          <!-- The actual menu -->
+        <ul id="menu">
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
+    
   </header>
 
   <!-- MAIN SECTION -->
@@ -48,17 +59,17 @@
       <!-- HERO SECTION -->
     <section id="hero-section" >
       <div class="background"></div>
-      
+      <div class="hero-content">
         <h1>Hi, I'm Tefi!</h1>
         <h2> A self-taught front-end web developer.</h2>
-    
+      </div>
     </section>
 
     <!-- PORTFOLIO SECTION -->
 
     <section id="portfolio">
     
-        <h3>Portfolio</h3>
+        <h2>Portfolio</h2>
         <p>Keep scrolling to see a selection of my recent projects!<br><br> They represent a different stage of 
           my learning process that helped me practice, learn more, cement both my technical + analytical 
           skills and strengthened my patience!. 
@@ -66,13 +77,13 @@
            <!-- Project 1  -->
         <article>
           <div class="project-description">
-            <h4>Rogue Pickings Website</h4>
+            <h3>HTML5/CSS Website</h3>
             <p>
               This is the very first website I coded to help me practice what I’ve learned about HTML & CSS using a Photoshop design comp. 
             </p>
           </div>
           <figure>      
-            <a href="https://tefisaravia.github.io/rogue_pickings/index.html">
+            <a href="https://tefisaravia.github.io/rogue_pickings/index.html" target="_blank">
               <img src="img/rogue-pickings-preview.png" alt="Project 1 photo">
             </a>            
           </figure>
@@ -80,13 +91,13 @@
         <!-- Project 2  -->
         <article>
           <div class="project-description">
-            <h4>Unplugged Retreat Responsive Website</h4>
+            <h3>Responsive Website</h3>
             <p>
               This website was created to cement my knowledge of creating responsive websites as well as improve my HTML5 and CSS skills. 
             </p>
           </div>
           <figure>        
-            <a href="https://tefisaravia.github.io/unplugged-retreat/">
+            <a href="https://tefisaravia.github.io/unplugged-retreat/" target="_blank">
               <img src="img/unplugged-retreat-preview.png" alt="Project 2 photo">
             </a> 
           </figure>
@@ -94,14 +105,14 @@
         <!-- Project 3  -->
         <article>
           <div class="project-description">
-            <h4>Election Map Project</h4>
+            <h3>JavaScript + jQuery Project</h3>
             <p>
               Interactive website to put my Javascript and jQuery knowledge to practice!
             </p>
           </div>
           <figure>        
-            <a href="www.github.com/tefisaravia">
-              <img src="img/connect-image.jpg" alt="Project 3 photo">
+            <a href="https://tefisaravia.github.io/clock-project/" target="_blank">
+              <img src="img/clock-project-preview.png" alt="Project 3 photo">
             </a> 
           </figure>
         </article>
@@ -112,18 +123,18 @@
 
     <section id="about">
       
-        <h3>About me</h3>
+        <h2>About me</h2>
         <article>
           <figure>        
-            <img src="img/tefi-saravia-bio-photo.jpg" alt="Tefi Saravia photo">
+            <img src="img/tefi-saravia2.jpg" alt="Tefi Saravia photo">
           </figure>
       
             <p>I majored as an engineer in my country, Guatemala, 6 years ago.
-              I started working in corporate as a financial analyst but wasn't passionate about it. So, I decided to make a change!
+              I started working in corporate as a financial analyst but wasn't passionate about it. So, I decided to make a change.
               <br><br>
-              After months of research, trial and error of other paths I discovered the awesome world of web developement. 
-              I started taking online classes and loved it! So far I've learned HTML5, CSS, JavaScript, jQuery, Git and GitHub, as well as 
-              building responsive websites!
+              After months of research and  trying different things I discovered the awesome world of coding!
+              I started taking online classes and <em>loved it</em>. So far I've learned HTML5, CSS, JavaScript, jQuery, Git and GitHub, as well as 
+              building responsive websites.
               <br><br>
                I’m passionate about making the web a better place by creating responsive, dynamic, and user-friendly websites.              
               When I'm not coding or learning something new you can find me cooking, reading, playing board games, and going on outdoor adventures! 
@@ -135,10 +146,12 @@
 
     <!-- CONTACT SECTION -->
     <section id="contact">
+      <h2>Contact</h2>
+      
       <!-- Contact details -->
       <div class="contact-details">
         <h3>Get in touch</h3>
-        <address >
+        <address>
           <p> <span class="fas fa-mobile-alt"></span>+502 4804 - 9058</p>
           <p> <span class="fas fa-envelope-square"></span>tefisaravia.virtual@gmail.com</p>
         </address>
