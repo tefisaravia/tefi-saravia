@@ -97,6 +97,7 @@ honey #d7cec7
 bright orange  #F79E02
 purplish  #17178C
 deep blue #000080
+gray 67697C
 */
 
 html {
@@ -105,7 +106,7 @@ html {
  
 body {
   background-color: white;
-  color: #67697C;
+  color: #000;
   font-family: 'Poppins', sans-serif;
   font-size: 1em;
   font-weight: 300;
@@ -117,12 +118,14 @@ a {
 }
 
 h1 {
-  font-family: 'Lobster Two', cursive;
-  font-size: 2.5em;
+  color: #4666FF;
+  font-family:  'Raleway', sans-serif;
+  font-size: 3em;
+  text-align: center;
 }
 
 h2 {
-  color: #67697C;
+  color: #4666FF;
   font-family: 'Raleway', sans-serif;
   font-size: 1.875em;
   font-weight: 600;
@@ -131,7 +134,7 @@ h2 {
 }
 
 h3 {
-  color: #F79E02;
+  color: #4666FF;
   font-size: 1.4em;
   font-weight: 500;
   text-align: center;
@@ -147,22 +150,27 @@ address {
 }
 
 
-/* -------------------- Base Header Styles -------------------- */
+/***** -------------------- HOME ---- PAGE -------------------- *****/
+
+/* --------------------  Header Styles -------------------- */
 
 header{
-  background-color: #d7cec7;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  padding: 15px 0 25px 0;
+  padding: 45px 0;
 }
 
 header h1{
-  color: white;
+  color: #000;
   font-family: 'Poppins', sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 2.5em;
   text-align: center;
+}
+
+header span {
+  color: #4666FF;
 }
 
 
@@ -188,8 +196,8 @@ header nav ul{
 
 
 nav ul li a  {
-  color: white;
-  font-weight: 500;
+  color: #000;
+  font-weight: 400;
   padding: 10px 0;
   text-transform: uppercase;
 }
@@ -197,7 +205,7 @@ nav ul li a  {
 
 nav ul li a:hover
 {
-  color: #F79E02;
+  color: #4666FF;
 }
 
 /* -------------------- Hero Section -------------------- */
@@ -230,15 +238,17 @@ nav ul li a:hover
 }
 
 #hero-section h1{
-  color: #F79E02;
+  color: #4666FF;
+  font-family: 'Lobster Two', cursive;
   font-size: 3em;
+  text-align: start;
 }
 
 #hero-section h2 {
-  color: #67697C;
+  color: #000;
   font-weight: 400;
   text-align: left;
-  width: 70%;
+  width: 80%;
 }
 
  /* -------------------- Portfolio Section -------------------- */
@@ -272,41 +282,7 @@ nav ul li a:hover
   text-align: center;
 }
 
-/* -------------------- About Section -------------------- */
-#about {
-  background-color: #d7cec7;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-}
 
-#about article {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-#about figure {
-  display:flex;
-  justify-content: center;
-}
-
-#about img{
-  border: 3px solid white;
-  width: 50%;
- }
-
- #about h2{
-   color: white;
- }
-
- #about p {
-  color: white;
-  line-height: 1.7;
-  text-align: justify;
-  width: 80%;
- }
 
 /* -------------------- Contact Styles -------------------- */
 
@@ -357,33 +333,135 @@ nav ul li a:hover
 .social-icons {
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
 }
 
-#contact .social-icons p  {
+.social-icons p  {
   align-items: center;
-  border-radius: 100%;
- 
+  border-radius: 50%;
+  background: #4666FF;
   display: flex;
-  font-size: 3em;
+  font-size: 2em;
   justify-content: center;
-  margin: 0;
+  height: 2em;
+  margin-right: 7px;
   padding: 0;
   width: 2em;
 }
 
-#contact .social-icons a {
-  color: #67697C;
+.social-icons a {
+  color: white;
+}
+
+.social-icons a:hover {
+  color: #000;
+  cursor: pointer;
+  text-decoration: none;
 }
 /* -------------------- Footer Styles -------------------- */
 
 footer {
+  align-items: center;
+  background: #D8D8F6;
   display: flex;
+  flex-flow: column wrap;
   justify-content: center;
-  margin: 20px 0;
+  margin-top: 40px;
+  padding: 20px 0;
+}
+
+.copyright {
+  text-align: center;
 }
 
 
+/***** -------------------- ABOUT ---- PAGE -------------------- *****/
+
+.title-section {
+  padding: 25px 0;
+  margin-bottom: 90px;
+  width: 100%;
+}
+#about {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding-bottom: 35px;
+}
+
+.about-image-div {
+  padding-bottom: 30px;;
+  position: relative;
+}
+
+.about-image-title{
+  background: #4666FF;
+  color: white;
+  font-size: 2em;
+  margin: 0;
+  position: absolute;
+  bottom: 30px;
+  right: 40px;
+  z-index: 2;
+}
+
+.about-image-div figure{
+  display: flex;
+  justify-content: center;
+}
+
+.about-image-div img{
+  width:80%;
+ }
+
+ .about-info {
+  color: #000;
+  display: block;
+  line-height: 1.7;
+  text-align: justify;
+  width: 80%;
+ }
+
+ #about a {
+  color: #000;
+ }
+
+#skills{
+  margin-bottom: 90px;
+  padding: 20px 0;
+}
+
+#skills .title-section{
+  background: #D8D8F6;
+}
+
+#skills .grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+ #skills p{
+  align-items: center; 
+  display: flex;
+  font-weight: 400;
+  flex-flow: column wrap;
+  justify-content: center;
+  text-align: center;
+ }
+
+ #skills i{
+  align-items: center;
+  border-radius: 20%;
+  background: #D8D8F6;
+  color: #4666FF;
+  display: flex;
+  font-size: 3em;
+  justify-content: center;
+  height: 1.5em;
+  margin-bottom: 17px;
+  padding: 0;
+  width: 1.5em;
+ }
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -467,9 +545,8 @@ footer {
 }
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
+  Media Queries for Responsive Design.
+   These override the primary ('mobile first') styles.
    ========================================================================== */
 
 
@@ -478,9 +555,6 @@ footer {
 @media only screen and (min-width: 768px) {
    /*header section*/
 
-   p {
-    font-size: 1.2em;
-  }
    header{
     display: flex; 
     flex-flow: row nowrap;
@@ -515,6 +589,7 @@ footer {
 
   #hero-section h1, #hero-section h2 {
     padding-left: 35px;
+    width: 100%;
   }
   
   /*portfolio*/
@@ -549,20 +624,6 @@ footer {
     margin: 0 30px;
   }
 
-  /*about*/
-
-  #about {
-    padding-bottom: 50px;
-  }
-
-  #about h3{
-    margin-top: 50px;
-  }
-
-  #about p{
-    padding: 10px 100px;
-  }
-
    /*contact*/
 
    #contact {
@@ -585,21 +646,64 @@ footer {
     width: 50%;
   }
 
+   /*--Footer--*/
   .social-icons{
-    padding-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
   }
 
+/***** ABOUT  PAGE *****/
+
+  #about {
+    padding-bottom: 50px;
+ 
+  }
+  #about figure{
+    margin:0;
+  }
+
+  .about-info {
+    margin: 0 20px;
+    width: 80%;
+}
+  .about-image-div img{
+    width:45%;
+   }
+
+  .about-image-title{
+    background: #4666FF;
+    color: white;
+    font-size: 3em;
+    margin: 0;
+    position: absolute;
+    bottom: 20px;
+    right: 150px;
+    z-index: 2;
+  }
+
+  #skills{
+    align-items: center;
+    display: flex;
+    flex-flow: column wrap;
+    padding-bottom: 40px;
+  }
+
+  #skills .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /*padding: 0 100px 40px 100px;*/
+    width: 70%;
+  }
+
+  #skills i{
+    font-size:4em;
+  }
 }
 
 
 /* -------------------- Styles for Desktop -------------------- */
 @media only screen and (min-width: 1200px) {
-
- 
-
-  p {
-    font-size: 1.5em;
-  }
 
   h2{
     font-size: 2.6em;
@@ -633,29 +737,6 @@ footer {
     #portfolio p {
       padding: 0 80px;
     }
-  
-    /*about section*/
-    
-    #about article {
-      align-items: flex-start;
-      display:flex;
-      flex-flow: row nowrap;
-      justify-content: center;
-    }
-   
-  
-    #about figure{
-      margin: 0 0 0 60px;
-      
-      
-    }
-    #about img{
-     /* margin: 100px 0;*/
-      width: 100%;
-    }
-    #about p {
-      width: 60%;
-  }
 
   /*contact section*/
   #contact .contact-details p {
@@ -665,8 +746,39 @@ footer {
   .social-icons{
     padding-top: 45px;
   }
-}
 
+     /***** ABOUT  PAGE *****/
+  #about {
+    align-items: center;
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+  }
+
+  .about-image-div img{
+    width:75%;
+   }
+
+   #about figure{
+     display: flex;
+     justify-content: flex-end;
+   }
+  .about-image-title{
+    background: #4666FF;
+    color: white;
+    font-size: 4em;
+    margin: 0;
+    position: absolute;
+    bottom: 10px;
+    right: -20px;
+    z-index: 2;
+  }
+
+  .about-info{
+    padding: 0 100px 0 50px;
+  }
+
+}
 
 
 @media only screen and (min-width: 35em) {
