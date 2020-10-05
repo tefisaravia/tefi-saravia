@@ -31,62 +31,129 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 
+   
+
 <body>
-
-  <!-- My site's content -->
-
-    <!-- HEADER -->
+  <!------ HEADER & NAV MENU ------>
   <header> 
-    <h1>Tefi Saravia <span class="fas fa-code"></span></h1>
-    <nav id="nav">
+    <h1>
+      <a href="#">
+        Tefi Saravia <span class="fas fa-code"></span>
+      </a>
+    </h1>
+    <!--<i id="hamburger" class="fas fa-bars"></i>-->
+    <nav id="nav" class="overlay" class="navbar navbar-default navbar-static-top">
         <ul>
-          <li><a href="portfolio/index.html">Portfolio</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="about/index.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="contact/index.html">Contact</a></li>
         </ul>
       </div>
     </nav>
-    
   </header>
 
-  <!-- MAIN SECTION -->
   <main>
-
       <!-- HERO SECTION -->
     <section id="hero-section">
-      <div class="background"></div>
       <div class="hero-content">
-        <h1>Welcome!</h1>
-        <h2> I'm so glad to have you here.</h2>
+        <h1>Welcome! I'm happy to have you here.</h1>
+        <h2> Coding responsive, dynamic and user-friendly websites.</h2>
       </div>
     </section>
 
-    
-  
-    <!-- CONTACT SECTION -->
-    <section id="contact">
-      <h2>Contact</h2>
-      
-      <!-- Contact details -->
-      <div class="contact-details">
-        <h3>Get in touch</h3>
-        <address>
-          <p> <span class="fas fa-mobile-alt"></span>+502 4804 - 9058</p>
-          <p> <span class="fas fa-envelope-square"></span>tefisaraviavirtual@gmail.com</p>
-        </address>
+        <!-- INFO SECTION -->
+    <section id="home-info-section">
+      <div class="info-container">
+        <p>
+          I'm passionate helping businesses design and develop a website that truly represents their brand!
+          <br><br>
+          My knowledge and love for coding and best practices makes me equiped to make your website stand-out and attract your ideal customers. 
+          <br><br>
+         
+        </p>
       </div>
+    </section>
+
+
+    <!-- PORTFOLIO SECTION -->
+
   
-      <!-- Social -->
-      <div class="social">
-        <h3>Let's connect!</h3>
-          <div class="social-icons">
-            <p> <a href="mailto:tefisaraviavirtual@gmail.com"  target="blank_"><span class="fas fa-envelope"></span></a></p>
-            <p> <a href="https://www.linkedin.com/in/tefi-saravia" target="blank_"><span class="fab fa-linkedin-in"></span></a></p>
-            <p> <a href="https://github.com/tefisaravia" target="blank_"><span class="fab fa-github"></span></a></p>
-            <p> <a href="https://www.instagram.com/tefisaravia.virtual/?hl=es-la" target="blank_"><span class="fab fa-instagram"></span></a></p>
+
+    <section id="portfolio">
+      <div class="title-section">
+        <h1>Portfolio</h1>
+      </div>
+      <div class="portfolio-projects">
+         <!-- Project 1  -->
+        <article id="project1">
+          <div class="project-description">
+            <h3>Rogue Pickings</h3>
+            <p>
+            HTML5/CSS Website using a design comp. 
+            </p>
+            <div class="button">
+              <a href="https://tefisaravia.github.io/rogue_pickings/index.html" target="_blank">
+                <input type="button" value="View Project"><i class="fas fa-angle-double-right"></i>
+              </a>
+            </div>
           </div>
+          <figure>                  
+            <img src="img/rogue-pickings-preview.png" alt="Project 1 photo">           
+          </figure>
+          
+        </article>
+        <!-- Project 2  -->
+        <article id="project2">
+          <div class="project-description">
+            <h3>Unplugged Retreat</h3>
+            <p>
+            Responsive website
+            </p>
+            <div class="button">
+              <a href="https://tefisaravia.github.io/unplugged-retreat/" target="_blank">
+                <input type="button" value="View Project"><i class="fas fa-angle-double-right"></i>
+              </a> 
+            </div>
+          </div>
+          <figure>  
+            <img src="img/unplugged-retreat-preview.png" alt="Project 2 photo">      
+          </figure>
+          
+        </article>
+        <!-- Project 3  -->
+        <article id="project3">
+          <div class="project-description">
+            <h3>Dog Clock</h3>
+            <p>
+            JavaScript + jQuery Project
+            </p>
+            <div class="button"> 
+              <a href="https://tefisaravia.github.io/clock-project/" target="_blank">
+                <input type="button" value="View Project"> <i class="fas fa-angle-double-right"></i>
+              </a>
+            </div>
+          </div>
+          <figure>   
+            <img src="img/clock-project-preview.png" alt="Project 3 photo">   
+          </figure>
+          
+        </article>
       </div>
-      
+    </section>
+
+      <!-- TESTIMONIALS SECTION -->
+    <section>
+      <div class="testimonial">
+
+        <h3>Kind words from clients</h3>
+        <p> Tefi you are genuine, smart, organized, practical and sweet!  <br>
+          Since working with you I have signed on 2, 1:1 clients + I have 
+          not been  stressed out and exhausted as I was before! <br>
+          You've done a great job helping me and I'm already 
+          referring you to all my friends!<br><br>
+          <strong>Becca Rich <br>@Becca Rich Wellness</strong>
+        </p>
+      </div>
     </section>
 </main>
 
@@ -97,7 +164,7 @@
     <p> <a href="mailto:tefisaraviavirtual@gmail.com"  target="blank_"><span class="fas fa-envelope"></span></a></p>
     <p> <a href="https://www.linkedin.com/in/tefi-saravia" target="blank_"><span class="fab fa-linkedin-in"></span></a></p>
     <p> <a href="https://github.com/tefisaravia" target="blank_"><span class="fab fa-github"></span></a></p>
-    <p> <a href="https://www.instagram.com/tefisaravia.virtual/?hl=es-la" target="blank_"><span class="fab fa-instagram"></span></a></p>
+    <p> <a href="https://twitter.com/tefisaravia" target="blank_"><span class="fab fa-twitter"></span></a></p>
   </div>
   <div class="copyright">
     <p><span class="far fa-copyright"></span> Tefi Saravia</p>

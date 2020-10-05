@@ -93,12 +93,13 @@ textarea {
 /* -------------------- General Styles -------------------- */
  
 /* ---------- Brand Colors ------------
-honey #d7cec7
-bright orange  #F79E02
-purplish  #17178C
-deep blue #000080
-gray 67697C
+violet blue  #6274C4
+light blue D8D8F6
+salmon FFDCD2
+orange FD6B54
+grey for font 535353;
 */
+
 
 html {
 	font-size: 16px;
@@ -106,11 +107,11 @@ html {
  
 body {
   background-color: white;
-  color: #000;
+  color: #535353;
   font-family: 'Poppins', sans-serif;
   font-size: 1em;
   font-weight: 300;
-  text-align: left;
+  text-align: center;
 }
 
 a {
@@ -118,30 +119,25 @@ a {
 }
 
 h1 {
-  color: #4666FF;
   font-family:  'Raleway', sans-serif;
-  font-size: 3em;
-  text-align: center;
+  font-size: 2.5em;
+
 }
 
 h2 {
-  color: #4666FF;
   font-family: 'Raleway', sans-serif;
   font-size: 1.875em;
   font-weight: 600;
-  padding-top: 10px;
-  text-align: center;
 }
 
 h3 {
-  color: #4666FF;
   font-size: 1.4em;
-  font-weight: 500;
-  text-align: center;
+  font-weight: 600;
 }
 
 p {
   font-size: 1em;
+  line-height: 1.8em;
   padding: 0 15px;
 }
 
@@ -155,22 +151,28 @@ address {
 /* --------------------  Header Styles -------------------- */
 
 header{
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  padding: 45px 0;
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 200px;
+  opacity: 0.95;
 }
 
 header h1{
-  color: #000;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 2.5em;
-  text-align: center;
 }
 
 header span {
-  color: #4666FF;
+  color: #D8D8F6;
+}
+
+header a{
+  color: #6274C4;
 }
 
 
@@ -182,7 +184,6 @@ header nav {
   display:flex;
   font-size: 1.125em;
   justify-content: space-around;
-
 }
 
 
@@ -196,7 +197,7 @@ header nav ul{
 
 
 nav ul li a  {
-  color: #000;
+  color: #6274C4;
   font-weight: 400;
   padding: 10px 0;
   text-transform: uppercase;
@@ -205,51 +206,52 @@ nav ul li a  {
 
 nav ul li a:hover
 {
-  color: #4666FF;
+  color: #D8D8F6;
 }
 
 /* -------------------- Hero Section -------------------- */
 
 
+
 #hero-section {
-  align-items: flex-start;
-  display:flex;
-  margin-bottom: 250px;
-  padding-top: 80px;
-  position: relative;
-}
-
-.background {
-  background: url("../img/hero-image.JPG") center no-repeat white;
+  background: url("../img/hero-image-mobile.JPG") center no-repeat white;
   background-size: cover;
-  content: "";
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  padding: 250px 0 300px 0;
-  z-index: -1;
+  padding: 20px 0 100px 0;
+  margin-top: 200px;
 }
 
-#hero-section h1, #hero-section h2{
-  padding-left: 15px;
-  position: relative;
+.hero-content{
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 50px 0;
 }
 
 #hero-section h1{
-  color: #4666FF;
-  font-family: 'Lobster Two', cursive;
-  font-size: 3em;
-  text-align: start;
+  color: #6274C4;
+  /*font-family: 'Lobster Two', cursive;*/
+  font-size: 2.5em;
+  font-weight: 400;
 }
 
 #hero-section h2 {
-  color: #000;
-  font-weight: 400;
-  text-align: left;
+  color: #D8D8F6;
+  font-weight: 600;
   width: 80%;
 }
+
+ /* -------------------- Info Section -------------------- */
+
+ .info-container {
+  
+  color: #6274C4;
+  padding: 100px 0;
+ }
+
+ .info-container p {
+   margin: 0 5%;
+ }
 
  /* -------------------- Portfolio Section -------------------- */
 
@@ -257,7 +259,15 @@ nav ul li a:hover
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  margin: 50px 0;
+
+}
+
+.title-section{
+  background: #D8D8F6;
+  color: #6274C4;
+  width: 100%;
+
+  
 }
 
 #portfolio article{
@@ -266,67 +276,101 @@ nav ul li a:hover
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  margin: 30px 0;
+  padding: 30px 0;
+}
 
+#portfolio .project-description {
+  width: 100%;
 }
 
 #portfolio figure{
   margin: 20px 0 0 0;
 }
+
+
 #portfolio img{
   margin: 5px 0;
-  width: 100%;
+  width: 80%;
 }
 
 #portfolio p{
   text-align: center;
 }
 
-
-
-/* -------------------- Contact Styles -------------------- */
-
-#contact {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+#project1{
+  background: #D8D8F6;
+  color: #6274C4;
 }
 
-/* contact details */
-
-#contact .contact-details {
-  display: flex;
-  flex-flow: row wrap; 
-  justify-content: center;
-  margin-bottom: 30px;
+#project2{
+  background: white;
+  color: #6274C4;
 }
 
-#contact .contact-details h3{
-  width: 77%;
+#project3{
+  background: #D8D8F6;
+  color: #6274C4;
 }
 
-#contact .contact-details address {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
+#portfolio a {
+  background: #6274C4;
+  
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: none;
+  color: #D8D8F6;
+  font-size: 0.813em;
+  font-weight: 400;
+  padding: 15px 20px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-#contact .contact-details p {
+.button{
+  margin: 30px 0 15px 0;
+}
+
+input[type=button] {
+  background: #6274C4;
+  color: #D8D8F6;
+  border: none;
+  font-size: 0.813em;
+  font-weight: 400;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+ /* -------------------- Testimonial Section -------------------- */
+.testimonial {
+  background: white;
+  color: #6274c4;
+  padding: 100px 0;
+ }
+
+ .testimonial p {
+   margin: 0 5%;
+ }
+
+
+
+
+/* -------------------- Footer Styles -------------------- */
+
+footer {
   align-items: center;
+  background: #D8D8F6;
   display: flex;
+  flex-flow: column wrap;
   justify-content: center;
-  margin: 0 0 0 30px;
+  padding: 20px 0;
 }
 
-#contact .contact-details span {
-  align-items: center;
-  border-radius: 100%;
-  display: flex;
-  font-size: 2em;
-  height: 2em;
-  justify-content: center;
-  width: 2em;
+.copyright {
+  color: #6274C4;
+  text-align: center;
 }
+
 
 /* social details */
 
@@ -338,7 +382,7 @@ nav ul li a:hover
 .social-icons p  {
   align-items: center;
   border-radius: 50%;
-  background: #4666FF;
+  background: #6274C4;
   display: flex;
   font-size: 2em;
   justify-content: center;
@@ -353,50 +397,32 @@ nav ul li a:hover
 }
 
 .social-icons a:hover {
-  color: #000;
+  color: #D8D8F6;
   cursor: pointer;
   text-decoration: none;
 }
-/* -------------------- Footer Styles -------------------- */
-
-footer {
-  align-items: center;
-  background: #D8D8F6;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  margin-top: 40px;
-  padding: 20px 0;
-}
-
-.copyright {
-  text-align: center;
-}
-
 
 /***** -------------------- ABOUT ---- PAGE -------------------- *****/
 
-.title-section {
-  padding: 25px 0;
-  margin-bottom: 90px;
-  width: 100%;
-}
+
+
 #about {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  margin-bottom: 20px;
-  padding-bottom: 35px;
+  margin: 200px 0 20px 0;
+  padding: 20px 0 35px 0;
 }
 
 .about-image-div {
-  padding-bottom: 30px;;
+  margin-bottom: 50px;
+  padding-bottom: 30px;
   position: relative;
 }
 
 .about-image-title{
-  background: #4666FF;
-  color: white;
+  background: #6274C4;
+  color: #D8D8F6;
   font-size: 2em;
   margin: 0;
   position: absolute;
@@ -411,11 +437,12 @@ footer {
 }
 
 .about-image-div img{
+  border-radius: 5px;
   width:80%;
  }
 
  .about-info {
-  color: #000;
+  color: #535353;
   display: block;
   line-height: 1.7;
   text-align: justify;
@@ -423,16 +450,19 @@ footer {
  }
 
  #about a {
-  color: #000;
+  color: #535353;
  }
 
 #skills{
-  margin-bottom: 90px;
-  padding: 20px 0;
+  padding-bottom: 150px;
 }
 
-#skills .title-section{
-  background: #D8D8F6;
+#skills .title-container {
+  background: #6274C4;
+  color: #D8D8F6;
+  margin-bottom: 50px;
+  padding: 25px 0;
+  width: 100%;
 }
 
 #skills .grid-container {
@@ -452,8 +482,8 @@ footer {
  #skills i{
   align-items: center;
   border-radius: 20%;
-  background: #D8D8F6;
-  color: #4666FF;
+  background: #6274c4;
+  color: #D8D8F6;
   display: flex;
   font-size: 3em;
   justify-content: center;
@@ -462,6 +492,48 @@ footer {
   padding: 0;
   width: 1.5em;
  }
+
+ /***** -------------------- CONTACT ---- PAGE -------------------- *****/
+
+ #contact{
+   margin-top: 200px;
+ }
+
+ .contact-image-div {
+  padding-bottom: 30px;
+  position: relative;
+}
+
+.contact-image-title{
+  background: #6274c4;
+  color: #D8D8F6;
+  font-size: 2em;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  left: 30px;
+  z-index: 2;
+}
+
+.contact-image-div figure{
+  display: flex;
+  justify-content: center;
+  margin:0;
+}
+
+.contact-image-div img{
+  width:100%;
+ }
+
+ #contact .info-container{
+   padding-bottom: 0;
+ }
+
+ #contact-form {
+
+  margin-bottom: 50px;
+
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -559,6 +631,7 @@ footer {
     display: flex; 
     flex-flow: row nowrap;
     justify-content: space-between;
+    height: 100px;
    }
 
    header h1{
@@ -577,42 +650,56 @@ footer {
   /*hero section*/
 
   #hero-section {
-    align-items: flex-start;
-    display: flex;
-    flex-flow: column wrap;
-    /*padding: 100px 0 150px 25px;*/
-  }
-
-  .background {
-    padding-bottom: 350px;
-  }
-
-  #hero-section h1, #hero-section h2 {
-    padding-left: 35px;
-    width: 100%;
+    padding: 200px 0 100px 0;
+    margin-top: 100px;
   }
   
-  /*portfolio*/
+  .hero-content{
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 50px 0;
+  }
 
-  #portfolio {
-    padding: 25px 0;
+  #hero-section h1 {
+    background: #D8D8F6;
+    
+  }
+
+  #hero-section h2{
+    background: #6274C4;
+
+  }
+
+  /* -------------------- Info Section -------------------- */
+
+ .info-container p {
+   margin: 0 10%;
+ }
+  
+ /* -------------------- Portfolio Section -------------------- */
+
+
+  #portfolio article{
+    align-items: center;
+    flex-flow: row nowrap;
   }
 
  .portfolio-projects {
    display: flex;
-   flex-flow: row nowrap;
+   flex-flow: row wrap;
  } 
   #portfolio .project-description {
     padding-bottom: 15px;
+    width: 50%;
   }
 
-  #portfolio a {
-    display:flex;
-    justify-content: center;
+  #portfolio figure{
+    width: 50%;
   }
+ 
   #portfolio img {
-    border: solid 2px #67697C;
-    width: 80%;
+    width: 90%;
   }
 
   #portfolio h2 {
@@ -624,36 +711,16 @@ footer {
     margin: 0 30px;
   }
 
-   /*contact*/
 
-   #contact {
-    display: flex;
-    flex-flow: row wrap;
-    padding: 30px;
-  }
 
-  #contact h2{
-    width: 100%;
-  }
-  
-  #contact .contact-details {
-    display: flex;
-    flex-flow: column wrap;
-    width: 50%;
-  }
-
-  #contact .social {
-    width: 50%;
-  }
-
-   /*--Footer--*/
+ /* -------------------- Footer -------------------- */
   .social-icons{
     display: flex;
     justify-content: space-evenly;
     width: 40%;
   }
 
-/***** ABOUT  PAGE *****/
+ /* -------------------- About Page -------------------- */
 
   #about {
     padding-bottom: 50px;
@@ -666,14 +733,12 @@ footer {
   .about-info {
     margin: 0 20px;
     width: 80%;
-}
+  }
   .about-image-div img{
     width:45%;
    }
 
   .about-image-title{
-    background: #4666FF;
-    color: white;
     font-size: 3em;
     margin: 0;
     position: absolute;
@@ -686,7 +751,7 @@ footer {
     align-items: center;
     display: flex;
     flex-flow: column wrap;
-    padding-bottom: 40px;
+    padding: 50px 0 100px 0;
   }
 
   #skills .grid-container {
@@ -699,11 +764,21 @@ footer {
   #skills i{
     font-size:4em;
   }
+
+   /* -------------------- Contact Page -------------------- */
+  .contact-image-title{
+    font-size: 3em;
+  }
+
+  .contact-image-div img{
+    width:80%;
+   }
 }
 
 
-/* -------------------- Styles for Desktop -------------------- */
-@media only screen and (min-width: 1200px) {
+/* -------------------- Styles for Laptop & Desktop -------------------- */
+@media only screen and (min-width: 992px) {
+
 
   h2{
     font-size: 2.6em;
@@ -712,70 +787,73 @@ footer {
   h3 {
     font-size: 2em;
   }
-/*hero-section*/
-  #hero-section {
-    margin-bottom: 0;
-    padding: 170px 0;
-  }
 
-  #hero-section h1{
+  p {
+    font-size: 1.4em;
+  }
+/*hero-section*/
+
+  /*#hero-section {
+    background: url("../img/hero-image-1.jpg") center no-repeat white;
+    background-size: cover;
+  }
+  */
+ 
+
+  #hero-section h1 {
+    background: #D8D8F6;
     font-size: 4em;
   }
 
   #hero-section h2{
+    background: #6274C4;
     font-size: 2.5em;
   }
 
-  #hero-section h1, #hero-section h2 {
-    padding-left: 45px;
-    position: relative;
+  .info-container p {
+    margin: 0 26%;
   }
+ 
 
-    /*portfolio section*/
+   /* -------------------- Portfolio Section -------------------- */
 
+  #portfolio .project-description {
+    justify-content: flex-end;
+  }
    
-    #portfolio p {
-      padding: 0 80px;
-    }
-
-  /*contact section*/
-  #contact .contact-details p {
-    margin-left: 130px;
+  #portfolio p {
+    padding: 0 80px;
   }
 
-  .social-icons{
-    padding-top: 45px;
-  }
 
-     /***** ABOUT  PAGE *****/
-  #about {
-    align-items: center;
-    display:flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-  }
+/* -------------------- About Section -------------------- */
+ 
 
   .about-image-div img{
-    width:75%;
+    width: 60%;
    }
 
    #about figure{
      display: flex;
-     justify-content: flex-end;
+     justify-content: center;
    }
   .about-image-title{
-    background: #4666FF;
-    color: white;
     font-size: 4em;
     margin: 0;
     position: absolute;
     bottom: 10px;
-    right: -20px;
+    right: 70px;
     z-index: 2;
   }
 
   .about-info{
     padding: 0 100px 0 50px;
+  }
+
+   /* -------------------- Contact Page -------------------- */
+   .contact-image-title{
+    font-size: 4em;
+   
   }
 
 }
