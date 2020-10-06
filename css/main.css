@@ -209,6 +209,20 @@ nav ul li a:hover
   color: #D8D8F6;
 }
 
+
+#hamburger {
+  color: #6274C4;
+  font-size: 1.125em;
+  margin-top: 5px;  
+  margin-bottom: 1em;
+  z-index: 5;  
+
+}
+
+#hamburger:hover {
+  cursor: pointer;
+}
+
 /* -------------------- Hero Section -------------------- */
 
 
@@ -228,15 +242,16 @@ nav ul li a:hover
   padding: 50px 0;
 }
 
-#hero-section h1{
+#hero-section h2{
   color: #6274C4;
   /*font-family: 'Lobster Two', cursive;*/
   font-size: 2.5em;
   font-weight: 400;
 }
 
-#hero-section h2 {
+#hero-section h3 {
   color: #D8D8F6;
+  font-size: 1.875em;
   font-weight: 600;
   width: 80%;
 }
@@ -283,9 +298,8 @@ nav ul li a:hover
 .title-section{
   background: #D8D8F6;
   color: #6274C4;
+  font-size: 1.5em;
   width: 100%;
-
-  
 }
 
 #portfolio article{
@@ -332,7 +346,6 @@ nav ul li a:hover
 
 #portfolio a {
   background: #6274C4;
-  
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border: none;
   color: #D8D8F6;
@@ -353,7 +366,6 @@ input[type=button] {
   border: none;
   font-size: 0.813em;
   font-weight: 400;
-
   text-align: center;
   text-transform: uppercase;
 }
@@ -457,6 +469,7 @@ footer {
 .about-image-div img{
   border-radius: 5px;
   width:80%;
+  height: auto;
  }
 
  .about-info {
@@ -645,6 +658,8 @@ footer {
 @media only screen and (min-width: 768px) {
    /*header section*/
 
+   
+
    header{
     display: flex; 
     flex-flow: row nowrap;
@@ -679,12 +694,12 @@ footer {
     padding: 50px 0;
   }
 
-  #hero-section h1 {
+  #hero-section h2 {
     background: #D8D8F6;
     
   }
 
-  #hero-section h2{
+  #hero-section h3{
     background: #6274C4;
 
   }
@@ -739,6 +754,10 @@ footer {
     margin: 0 30px;
   }
 
+
+  input[type=button], #portfolio a  {
+    font-size: 1em;
+  }
 
 
  /* -------------------- Footer -------------------- */
@@ -828,14 +847,15 @@ footer {
   */
  
 
-  #hero-section h1 {
+  #hero-section h2 {
     background: #D8D8F6;
     font-size: 4em;
   }
 
-  #hero-section h2{
+  #hero-section h3{
     background: #6274C4;
     font-size: 2.5em;
+    font-weight: 400;
   }
 
   .info-container p {
@@ -858,7 +878,7 @@ footer {
  
 
   .about-image-div img{
-    width: 60%;
+    width: 70%;
    }
 
    #about figure{
