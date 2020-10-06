@@ -100,6 +100,12 @@ orange FD6B54
 grey for font 535353;
 */
 
+:root{
+  --light-color: #d8d8f6;
+  --dark-color: #6274c4;
+  --font-color: #535353;
+}
+
 
 html {
 	font-size: 16px;
@@ -168,7 +174,7 @@ header h1{
 }
 
 header span {
-  color: #D8D8F6;
+  color: var(--light-color);
 }
 
 header a{
