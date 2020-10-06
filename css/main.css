@@ -241,6 +241,24 @@ nav ul li a:hover
   width: 80%;
 }
 
+/* -------------------- Back to top button  -------------------- */
+
+.back-to-top {
+  align-items: center;
+  background: #6274C4;
+  border-radius: 50%;
+  color: #D8D8F6;
+  display: flex;
+  justify-content: center;
+  font-size: 2em;
+  position: fixed;
+  bottom: 10px;
+  height: 50px;
+  right: 10px;
+  text-decoration: none;
+  width: 50px;
+}
+
  /* -------------------- Info Section -------------------- */
 
  .info-container {
@@ -671,6 +689,16 @@ footer {
 
   }
 
+
+/* -------------------- Back to top button  -------------------- */
+
+.back-to-top {
+  font-size: 2.5em;
+  bottom: 30px;
+  height: 60px;
+  right: 30px;
+  width: 60px;
+}
   /* -------------------- Info Section -------------------- */
 
  .info-container p {
