@@ -474,8 +474,8 @@ footer {
 
 .about-image-div img{
   border-radius: 5px;
-  width:100%;
-  height: auto;
+  height:auto;
+  width: 70%;
  }
 
  .about-info {
@@ -559,6 +559,7 @@ footer {
 }
 
 .contact-image-div img{
+  height: auto;
   width:100%;
  }
 
@@ -788,6 +789,7 @@ footer {
     width: 80%;
   }
   .about-image-div img{
+    height: auto;
     width:45%;
    }
 
@@ -824,6 +826,7 @@ footer {
   }
 
   .contact-image-div img{
+    height: auto;
     width:80%;
    }
 }
@@ -884,6 +887,7 @@ footer {
  
 
   .about-image-div img{
+    height: auto;
     width: 50%;
    }
 
