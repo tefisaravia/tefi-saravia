@@ -474,7 +474,7 @@ footer {
 
 .about-image-div img{
   border-radius: 5px;
-  width:80%;
+  width:100%;
   height: auto;
  }
 
@@ -884,7 +884,7 @@ footer {
  
 
   .about-image-div img{
-    width: 70%;
+    width: 50%;
    }
 
    #about figure{
