@@ -482,8 +482,8 @@ footer {
   width: 80%;
  }
 
- #about a {
-  color: #535353;
+ .about-info a {
+  color: var(--dark-color);
  }
 
 #skills{
@@ -525,6 +525,64 @@ footer {
   padding: 0;
   width: 1.5em;
  }
+
+ #gallery-section {
+  padding-bottom: 150px;
+ }
+
+#gallery-section article{
+  padding-bottom: 50px;
+}
+
+#gallery-section .title-container {
+  background: #6274C4;
+  color: #D8D8F6;
+  margin-bottom: 50px;
+  padding: 25px 0;
+  width: 100%;
+}
+ .gallery{
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(6, 16.6%);
+  grid-gap: 10px;
+ }
+
+ .gallery-item{
+   margin:0;
+   position: relative;
+ }
+
+ .gallery-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+ }
+
+ .gallery-caption {
+  align-items: center;
+  background-color: var(--dark-color); 
+  color: var(--light-color); 
+  display: flex;
+  height: 0;
+  justify-content: center;
+  overflow: hidden;
+  margin:0;
+  position: absolute;
+  left:0;
+  bottom: 0;
+  text-align: center;
+  transition: .5s ease;
+  width: 94%;
+ }
+
+ .gallery-item:hover .gallery-caption{
+   height: 100%;
+ }
+
+ 
+
 
  /***** -------------------- CONTACT ---- PAGE -------------------- *****/
 
@@ -683,7 +741,7 @@ footer {
     font-size: 1.2em;
   }
 
-  /*hero section*/
+/* -------------------- Hero section  -------------------- */
 
   #hero-section {
     padding: 200px 0 100px 0;
@@ -716,6 +774,7 @@ footer {
   height: 60px;
   right: 30px;
   width: 60px;
+  z-index: 999;
 }
   /* -------------------- Info Section -------------------- */
 
@@ -818,6 +877,13 @@ footer {
   #skills i{
     font-size:4em;
   }
+
+  .gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(4, 25%);
+    overflow: hidden;
+   }
 
    /* -------------------- Contact Page -------------------- */
   .contact-image-title{
