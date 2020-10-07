@@ -470,6 +470,7 @@ footer {
 
 #about-image img{
   border-radius: 5px;
+  height: auto;
   width: 100%;
  }
 
