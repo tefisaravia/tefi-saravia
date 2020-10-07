@@ -317,7 +317,7 @@ nav ul li a:hover
   padding: 30px 0;
 }
 
-#portfolio .project-description {
+.project-info {
   width: 100%;
 }
 
@@ -331,7 +331,12 @@ nav ul li a:hover
   width: 80%;
 }
 
-#portfolio p{
+.project-details{
+  text-align: justify;
+}
+
+.languages {
+  padding: 0 40px;
   text-align: center;
 }
 
@@ -350,28 +355,18 @@ nav ul li a:hover
   color: #6274C4;
 }
 
-#portfolio a {
+.button-container{
+  margin: 30px 0 15px 0;
+}
+
+.portfolio-button {
   background: #6274C4;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   color: #D8D8F6;
   font-size: 0.813em;
   font-weight: 400;
   padding: 15px 20px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.button{
-  margin: 30px 0 15px 0;
-}
-
-input[type=button] {
-  background: #6274C4;
-  color: #D8D8F6;
-  border: none;
-  font-size: 0.813em;
-  font-weight: 400;
   text-align: center;
   text-transform: uppercase;
 }
@@ -467,15 +462,15 @@ footer {
   z-index: 2;
 }
 
-.about-image-div figure{
+#about-image{
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+  width: 70%;
 }
 
-.about-image-div img{
+#about-image img{
   border-radius: 5px;
-  height:auto;
-  width: 70%;
+  width: 100%;
  }
 
  .about-info {
@@ -739,7 +734,7 @@ footer {
    display: flex;
    flex-flow: row wrap;
  } 
-  #portfolio .project-description {
+ .project-info {
     padding-bottom: 15px;
     width: 50%;
   }
@@ -757,13 +752,13 @@ footer {
     width: 100%;
   }
 
-  #portfolio p{
+  .project-details{
     margin: 0 30px;
   }
 
 
-  input[type=button], #portfolio a  {
-    font-size: 1em;
+  .portfolio-button {
+    font-size: 0.9em;
   }
 
 
@@ -788,9 +783,12 @@ footer {
     margin: 0 20px;
     width: 80%;
   }
-  .about-image-div img{
-    height: auto;
+
+  #about-image {
     width:45%;
+  }
+  #about-image img{
+   width: 100%;
    }
 
   .about-image-title{
@@ -874,21 +872,23 @@ footer {
 
    /* -------------------- Portfolio Section -------------------- */
 
-  #portfolio .project-description {
-    justify-content: flex-end;
-  }
    
-  #portfolio p {
+  .project-details {
     padding: 0 80px;
   }
 
+  .portfolio-button {
+    font-size: 1.2em;
+  }
 
 /* -------------------- About Section -------------------- */
  
-
-  .about-image-div img{
-    height: auto;
+  #about-image {
     width: 50%;
+  }
+
+  #about-image img{
+    width: 100%;
    }
 
    #about figure{

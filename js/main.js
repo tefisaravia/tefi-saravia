@@ -4,6 +4,19 @@
 
 ////////////////// Back to top button  //////////////////
 var amountScrolled = 300;
+function portfolioLink1() { 
+    window.open( 
+    "https://tefisaravia.github.io/rogue_pickings/index.html", "_blank"); 
+    } 
+
+function portfolioLink2() { 
+    window.open( 
+    "https://tefisaravia.github.io/unplugged-retreat/", "_blank"); 
+    } 
+function portfolioLink3() { 
+    window.open( 
+    "https://tefisaravia.github.io/clock-project/", "_blank"); 
+    } 
 
 $(document).ready(function(){
 
@@ -23,7 +36,7 @@ $(document).ready(function(){
         }, 700);
         return false;
     });
-
+  
   
 
 
