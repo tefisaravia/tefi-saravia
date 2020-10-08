@@ -446,6 +446,8 @@ footer {
 }
 
 .about-image-div {
+  display: flex;
+  justify-content: center;
   margin-bottom: 50px;
   padding-bottom: 30px;
   position: relative;
@@ -463,8 +465,6 @@ footer {
 }
 
 #about-image{
-  display: flex;
-  justify-content: flex-end;
   width: 70%;
 }
 
@@ -527,6 +527,9 @@ footer {
  }
 
  #gallery-section {
+   display: flex;
+   justify-content: center;
+   flex-flow: row wrap;
   padding-bottom: 150px;
  }
 
@@ -542,10 +545,12 @@ footer {
   width: 100%;
 }
  .gallery{
+  box-sizing: border-box;
   display: grid;
   grid-template-columns: repeat(2, 50%);
   grid-template-rows: repeat(6, 16.6%);
   grid-gap: 10px;
+  width: 80%;
  }
 
  .gallery-item{
@@ -591,6 +596,8 @@ footer {
  }
 
  .contact-image-div {
+  display: flex;
+  justify-content: center;
   padding-bottom: 30px;
   position: relative;
 }
@@ -602,7 +609,7 @@ footer {
   margin: 0;
   position: absolute;
   bottom: 0;
-  left: 30px;
+  left: 10%;
   z-index: 2;
 }
 
@@ -610,6 +617,7 @@ footer {
   display: flex;
   justify-content: center;
   margin:0;
+  width: 100%;
 }
 
 .contact-image-div img{
@@ -847,9 +855,6 @@ footer {
   #about-image {
     width:45%;
   }
-  #about-image img{
-   width: 100%;
-   }
 
   .about-image-title{
     font-size: 3em;
@@ -882,7 +887,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 33%);
     grid-template-rows: repeat(4, 25%);
-    overflow: hidden;
+   
    }
 
    /* -------------------- Contact Page -------------------- */
@@ -890,9 +895,8 @@ footer {
     font-size: 3em;
   }
 
-  .contact-image-div img{
-    height: auto;
-    width:80%;
+  .contact-image-div figure{
+    width:70%;
    }
 }
 
@@ -914,12 +918,6 @@ footer {
   }
 /*hero-section*/
 
-  /*#hero-section {
-    background: url("../img/hero-image-1.jpg") center no-repeat white;
-    background-size: cover;
-  }
-  */
- 
 
   #hero-section h2 {
     background: #D8D8F6;
@@ -953,10 +951,6 @@ footer {
   #about-image {
     width: 50%;
   }
-
-  #about-image img{
-    width: 100%;
-   }
 
    #about figure{
      display: flex;
