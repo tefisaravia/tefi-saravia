@@ -98,14 +98,14 @@ light blue D8D8F6
 salmon FFDCD2
 orange FD6B54
 grey for font 535353;
+otro azul 4a89ff
 */
 
 :root{
-  --light-color: #d8d8f6;
-  --dark-color: #6274c4;
+  --light-color:#D8D8F6;
+  --dark-color: #6274C4;
   --font-color: #535353;
 }
-
 
 html {
 	font-size: 16px;
@@ -178,7 +178,7 @@ header span {
 }
 
 header a{
-  color: #6274C4;
+  color: var(--dark-color);
 }
 
 
@@ -203,7 +203,7 @@ header nav ul{
 
 
 nav ul li a  {
-  color: #6274C4;
+  color: var(--dark-color);
   font-weight: 400;
   padding: 10px 0;
   text-transform: uppercase;
@@ -212,12 +212,12 @@ nav ul li a  {
 
 nav ul li a:hover
 {
-  color: #D8D8F6;
+  color: var(--light-color);
 }
 
 
 #hamburger {
-  color: #6274C4;
+  color: var(--dark-color);
   font-size: 1.125em;
   margin-top: 5px;  
   margin-bottom: 1em;
@@ -249,14 +249,14 @@ nav ul li a:hover
 }
 
 #hero-section h2{
-  color: #6274C4;
+  color: var(--dark-color);
   /*font-family: 'Lobster Two', cursive;*/
   font-size: 2.5em;
   font-weight: 400;
 }
 
 #hero-section h3 {
-  color: #D8D8F6;
+  color: var(--light-color);
   font-size: 1.875em;
   font-weight: 600;
   width: 80%;
@@ -266,9 +266,9 @@ nav ul li a:hover
 
 .back-to-top {
   align-items: center;
-  background: #6274C4;
+  background: var(--dark-color);
   border-radius: 50%;
-  color: #D8D8F6;
+  color: var(--light-color);
   display: flex;
   justify-content: center;
   font-size: 2em;
@@ -284,7 +284,7 @@ nav ul li a:hover
 
  .info-container {
   
-  color: #6274C4;
+  color: var(--dark-color);
   padding: 100px 0;
  }
 
@@ -302,8 +302,8 @@ nav ul li a:hover
 }
 
 .title-section{
-  background: #D8D8F6;
-  color: #6274C4;
+  background: var(--light-color);
+  color: var(--dark-color);
   font-size: 1.5em;
   width: 100%;
 }
@@ -341,18 +341,18 @@ nav ul li a:hover
 }
 
 #project1{
-  background: #D8D8F6;
-  color: #6274C4;
+  background: var(--light-color);
+  color: var(--dark-color);
 }
 
 #project2{
   background: white;
-  color: #6274C4;
+  color: var(--dark-color);
 }
 
 #project3{
-  background: #D8D8F6;
-  color: #6274C4;
+  background: var(--light-color);
+  color: var(--dark-color);
 }
 
 .button-container{
@@ -360,10 +360,10 @@ nav ul li a:hover
 }
 
 .portfolio-button {
-  background: #6274C4;
+  background: var(--dark-color);
   border: none;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  color: #D8D8F6;
+  color: var(--light-color);
   font-size: 0.813em;
   font-weight: 400;
   padding: 15px 20px;
@@ -375,7 +375,7 @@ nav ul li a:hover
  /* -------------------- Testimonial Section -------------------- */
 .testimonial {
   background: white;
-  color: #6274c4;
+  color: var(--dark-color);
   padding: 100px 0;
  }
 
@@ -390,7 +390,7 @@ nav ul li a:hover
 
 footer {
   align-items: center;
-  background: #D8D8F6;
+  background: var(--light-color);
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -398,7 +398,7 @@ footer {
 }
 
 .copyright {
-  color: #6274C4;
+  color: var(--dark-color);
   text-align: center;
 }
 
@@ -413,7 +413,7 @@ footer {
 .social-icons p  {
   align-items: center;
   border-radius: 50%;
-  background: #6274C4;
+  background: var(--dark-color);
   display: flex;
   font-size: 2em;
   justify-content: center;
@@ -428,7 +428,7 @@ footer {
 }
 
 .social-icons a:hover {
-  color: #D8D8F6;
+  color: var(--light-color);
   cursor: pointer;
   text-decoration: none;
 }
@@ -454,8 +454,8 @@ footer {
 }
 
 .about-image-title{
-  background: #6274C4;
-  color: #D8D8F6;
+  background: var(--dark-color);
+  color: var(--light-color);
   font-size: 2em;
   margin: 0;
   position: absolute;
@@ -465,6 +465,7 @@ footer {
 }
 
 #about-image{
+  height: auto;
   width: 70%;
 }
 
@@ -491,8 +492,8 @@ footer {
 }
 
 #skills .title-container {
-  background: #6274C4;
-  color: #D8D8F6;
+  background: var(--dark-color);
+  color: var(--light-color);
   margin-bottom: 50px;
   padding: 25px 0;
   width: 100%;
@@ -515,8 +516,8 @@ footer {
  #skills i{
   align-items: center;
   border-radius: 20%;
-  background: #6274c4;
-  color: #D8D8F6;
+  background: var(--dark-color);
+  color: var(--light-color);
   display: flex;
   font-size: 3em;
   justify-content: center;
@@ -534,12 +535,19 @@ footer {
  }
 
 #gallery-section article{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
   padding-bottom: 50px;
 }
 
+#gallery-section p{
+  width: 80%;
+}
+
 #gallery-section .title-container {
-  background: #6274C4;
-  color: #D8D8F6;
+  background: var(--dark-color);
+  color: var(--light-color);
   margin-bottom: 50px;
   padding: 25px 0;
   width: 100%;
@@ -550,6 +558,7 @@ footer {
   grid-template-columns: repeat(2, 50%);
   grid-template-rows: repeat(6, 16.6%);
   grid-gap: 10px;
+  overflow: auto;
   width: 80%;
  }
 
@@ -579,7 +588,7 @@ footer {
   bottom: 0;
   text-align: center;
   transition: .5s ease;
-  width: 94%;
+  width: 100%;
  }
 
  .gallery-item:hover .gallery-caption{
@@ -603,8 +612,8 @@ footer {
 }
 
 .contact-image-title{
-  background: #6274c4;
-  color: #D8D8F6;
+  background: var(--dark-color);
+  color: var(--light-color);
   font-size: 2em;
   margin: 0;
   position: absolute;
@@ -618,10 +627,12 @@ footer {
   justify-content: center;
   margin:0;
   width: 100%;
+
 }
 
 .contact-image-div img{
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   width:100%;
  }
 
@@ -764,12 +775,12 @@ footer {
   }
 
   #hero-section h2 {
-    background: #D8D8F6;
+    background: var(--light-color);
     
   }
 
   #hero-section h3{
-    background: #6274C4;
+    background: var(--dark-color);
 
   }
 
@@ -920,12 +931,12 @@ footer {
 
 
   #hero-section h2 {
-    background: #D8D8F6;
+    background: var(--light-color);
     font-size: 4em;
   }
 
   #hero-section h3{
-    background: #6274C4;
+    background: var(--dark-color);
     font-size: 2.5em;
     font-weight: 400;
   }
@@ -933,6 +944,7 @@ footer {
   .info-container p {
     margin: 0 26%;
   }
+
  
 
    /* -------------------- Portfolio Section -------------------- */
@@ -969,6 +981,9 @@ footer {
     padding: 0 100px 0 50px;
   }
 
+  .gallery-caption{
+    font-size: 1.2em;
+  }
    /* -------------------- Contact Page -------------------- */
    .contact-image-title{
     font-size: 4em;
