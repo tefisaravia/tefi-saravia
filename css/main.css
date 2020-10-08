@@ -278,6 +278,7 @@ nav ul li a:hover
   right: 10px;
   text-decoration: none;
   width: 50px;
+  z-index: 999;
 }
 
  /* -------------------- Info Section -------------------- */
@@ -454,8 +455,8 @@ footer {
 }
 
 .about-image-title{
-  background: var(--dark-color);
-  color: var(--light-color);
+  background: var(--light-color);
+  color: var(--dark-color);
   font-size: 2em;
   margin: 0;
   position: absolute;
@@ -476,7 +477,7 @@ footer {
  }
 
  .about-info {
-  color: #535353;
+  color: var(--dark-color);
   display: block;
   line-height: 1.7;
   text-align: justify;
@@ -484,6 +485,7 @@ footer {
  }
 
  .about-info a {
+  background-color: var(--light-color);
   color: var(--dark-color);
  }
 
@@ -492,8 +494,8 @@ footer {
 }
 
 #skills .title-container {
-  background: var(--dark-color);
-  color: var(--light-color);
+  background: var(--light-color);
+  color: var(--dark-color);
   margin-bottom: 50px;
   padding: 25px 0;
   width: 100%;
@@ -506,6 +508,7 @@ footer {
 
  #skills p{
   align-items: center; 
+  color: var(--dark-color);
   display: flex;
   font-weight: 400;
   flex-flow: column wrap;
@@ -516,8 +519,8 @@ footer {
  #skills i{
   align-items: center;
   border-radius: 20%;
-  background: var(--dark-color);
-  color: var(--light-color);
+  background: var(--light-color);
+  color: var(--dark-color);
   display: flex;
   font-size: 3em;
   justify-content: center;
@@ -793,7 +796,6 @@ footer {
   height: 60px;
   right: 30px;
   width: 60px;
-  z-index: 999;
 }
   /* -------------------- Info Section -------------------- */
 

@@ -19,7 +19,7 @@ function portfolioLink3() {
     } 
 
 $(document).ready(function(){
-
+    $('.back-to-top').hide();
     //fade in back to top button
     $(window).scroll(function() {
         if ( $(window).scrollTop() > amountScrolled ) {
