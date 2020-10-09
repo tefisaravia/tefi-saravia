@@ -18,6 +18,16 @@ function portfolioLink3() {
     "https://tefisaravia.github.io/clock-project/", "_blank"); 
     } 
 
+function codePenPortfolio() { 
+        window.open( 
+        "https://codepen.io/your-work/", "_blank"); 
+        }  
+
+function gitHubPortfolio() { 
+        window.open( 
+        "https://github.com/tefisaravia?tab=repositories", "_blank"); 
+        }   
+
 $(document).ready(function(){
     $('.back-to-top').hide();
     //fade in back to top button

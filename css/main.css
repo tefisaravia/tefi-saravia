@@ -99,6 +99,7 @@ salmon FFDCD2
 orange FD6B54
 grey for font 535353;
 otro azul 4a89ff
+d8dcff
 */
 
 :root{
@@ -372,6 +373,20 @@ nav ul li a:hover
   text-transform: uppercase;
 }
 
+#all-projects-div {
+  align-items: center;
+  background-color: var(--light-color);
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  margin: 0;
+  padding: 30px 0;
+  width: 100%;
+}
+
+#all-projects-div .portfolio-button {
+  margin-bottom: 30px;
+}
 
  /* -------------------- Testimonial Section -------------------- */
 .testimonial {
@@ -434,6 +449,9 @@ footer {
   text-decoration: none;
 }
 
+.social-icons p:hover{
+  opacity: 0.9;
+}
 /***** -------------------- ABOUT ---- PAGE -------------------- *****/
 
 
@@ -447,8 +465,8 @@ footer {
 }
 
 .about-image-div {
-  display: flex;
-  justify-content: center;
+  /*display: flex;
+  justify-content: center;*/
   margin-bottom: 50px;
   padding-bottom: 30px;
   position: relative;
@@ -465,7 +483,7 @@ footer {
   z-index: 2;
 }
 
-#about-image{
+.about-image{
   height: auto;
   width: 70%;
 }
