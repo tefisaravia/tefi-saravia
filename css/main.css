@@ -168,10 +168,11 @@ header{
   opacity: 0.95;
 }
 
-header h1{
+header p{
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 2.5em;
+  margin-bottom: 0;
 }
 
 header span {
@@ -249,14 +250,14 @@ nav ul li a:hover
   padding: 50px 0;
 }
 
-#hero-section h2{
+#hero-section h1{
   color: var(--dark-color);
   /*font-family: 'Lobster Two', cursive;*/
   font-size: 2.5em;
   font-weight: 400;
 }
 
-#hero-section h3 {
+#hero-section h2 {
   color: var(--light-color);
   font-size: 1.875em;
   font-weight: 600;
@@ -468,6 +469,16 @@ footer {
   padding: 20px 0 35px 0;
 }
 
+#about h1{
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  font-size: 2em;
+  font-weight: 600;
+  padding: 50px 0;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
 .about-image-div {
   display: flex;
   justify-content: center;
@@ -574,7 +585,7 @@ footer {
   background: var(--dark-color);
   color: var(--light-color);
   margin-bottom: 50px;
-  padding: 25px 0;
+  padding: 50px 0;
   width: 100%;
 }
  .gallery{
@@ -627,6 +638,16 @@ footer {
 
  #contact{
    margin-top: 200px;
+ }
+
+ #contact h1{
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  font-size: 2em;
+  font-weight: 600;
+  padding: 50px 0;
+  margin-bottom: 50px;
+  width: 100%;
  }
 
  .contact-image-div {
@@ -766,14 +787,16 @@ footer {
    
 
    header{
+    align-items: center;
     display: flex; 
     flex-flow: row nowrap;
     justify-content: space-between;
     height: 100px;
    }
 
-   header h1{
+   header p{
      font-size: 2em;
+     margin-top:0;
      padding-left: 50px;
    }
 
@@ -799,12 +822,12 @@ footer {
     padding: 50px 0;
   }
 
-  #hero-section h2 {
+  #hero-section h1 {
     background: var(--light-color);
     
   }
 
-  #hero-section h3{
+  #hero-section h2{
     background: var(--dark-color);
 
   }
@@ -876,7 +899,10 @@ footer {
 
   #about {
     padding-bottom: 50px;
- 
+  }
+
+  #about h1 {
+    padding-bottom: 50px;
   }
   #about figure{
     margin:0;
@@ -926,8 +952,12 @@ footer {
    }
 
    /* -------------------- Contact Page -------------------- */
-  .contact-image-title{
-    font-size: 3em;
+  #contact h1{
+    font-size: 2.5em;
+  }
+  
+   .contact-image-title{
+    font-size: 2.5em;
   }
 
   .contact-image-div figure{
@@ -937,8 +967,12 @@ footer {
 
 
 /* -------------------- Styles for Laptop & Desktop -------------------- */
+
 @media only screen and (min-width: 992px) {
 
+  h1{
+    font-size: 3em;
+  }
 
   h2{
     font-size: 2.6em;
@@ -954,12 +988,12 @@ footer {
 /*hero-section*/
 
 
-  #hero-section h2 {
+  #hero-section h1 {
     background: var(--light-color);
     font-size: 4em;
   }
 
-  #hero-section h3{
+  #hero-section h2{
     background: var(--dark-color);
     font-size: 2.5em;
     font-weight: 400;
@@ -984,6 +1018,10 @@ footer {
 
 /* -------------------- About Section -------------------- */
  
+  #about h1{
+      font-size: 3em;
+  }
+
   #about-image {
     width: 50%;
   }
@@ -1005,8 +1043,12 @@ footer {
     font-size: 1.2em;
   }
    /* -------------------- Contact Page -------------------- */
+  #contact h1{
+    font-size: 3em;
+  }
+   
    .contact-image-title{
-    font-size: 4em;
+    font-size: 3em;
    
   }
 
