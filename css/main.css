@@ -984,10 +984,6 @@ footer {
     width: 50%;
   }
 
-   #about figure{
-     display: flex;
-     justify-content: center;
-   }
   .about-image-title{
     font-size: 4em;
     margin: 0;
