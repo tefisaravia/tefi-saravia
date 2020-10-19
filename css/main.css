@@ -93,18 +93,22 @@ textarea {
 /* -------------------- General Styles -------------------- */
  
 /* ---------- Brand Colors ------------
-violet blue  #6274C4
-light blue D8D8F6
+
+light violet D8D8F6
+
 salmon FFDCD2
 orange FD6B54
+
 grey for font 535353;
-otro azul 4a89ff
-d8dcff
+
+light blue d8dcff
+violet blue 4559B2
+navy blue 03256c
 */
 
 :root{
-  --light-color:#D8D8F6;
-  --dark-color: #4559B2;
+  --light-color:#C1D0F0;
+  --dark-color: #03256c;
   --font-color: #535353;
 }
 
