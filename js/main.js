@@ -2,21 +2,21 @@
 
 
 
-////////////////// Back to top button  //////////////////
-var amountScrolled = 300;
-function portfolioLink1() { 
-    window.open( 
-    "https://tefisaravia.github.io/rogue_pickings/index.html", "_blank"); 
-    } 
 
-function portfolioLink2() { 
+
+function portfolioLink1() { 
     window.open( 
     "https://tefisaravia.github.io/unplugged-retreat/", "_blank"); 
     } 
-function portfolioLink3() { 
+function portfolioLink2() { 
     window.open( 
     "https://tefisaravia.github.io/clock-project/", "_blank"); 
     } 
+    function portfolioLink3() { 
+        window.open( 
+        "https://codepen.io/tefisaravia/pen/OJXPogK", "_blank"); 
+        } 
+    
 
 function codePenPortfolio() { 
         window.open( 
@@ -27,6 +27,9 @@ function gitHubPortfolio() {
         window.open( 
         "https://github.com/tefisaravia?tab=repositories", "_blank"); 
         }   
+
+ ////////////////// Back to top button  //////////////////
+var amountScrolled = 300;
 
 $(document).ready(function(){
     $('.back-to-top').hide();
