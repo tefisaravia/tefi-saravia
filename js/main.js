@@ -14,7 +14,7 @@ function portfolioLink2() {
     } 
     function portfolioLink3() { 
         window.open( 
-        "https://codepen.io/tefisaravia/pen/OJXPogK", "_blank"); 
+        "https://codepen.io/tefisaravia/full/MWeQjXB", "_blank"); 
         } 
     
 
