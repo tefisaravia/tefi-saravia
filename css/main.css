@@ -219,6 +219,7 @@ nav ul li a  {
 nav ul li a:hover
 {
   color: var(--light-color);
+  border-bottom: solid 2px var(--dark-color);
 }
 
 
@@ -695,6 +696,46 @@ footer {
   margin-bottom: 50px;
 
 }
+
+ /***** -------------------- CERTIFICATES ---- PAGE -------------------- *****/
+
+ #certificates{
+  margin-top: 200px;
+  padding-bottom: 100px;
+}
+
+.certificate{
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.certificate h3{
+  color: var(--dark-color);
+}
+
+.certificate a{
+  color: var(--dark-color);
+  border-bottom: solid 2px var(--dark-color);
+}
+
+.certificate a:hover{
+  color: var(--light-color);
+  border-bottom: solid 2px var(--light-color);
+}
+
+
+
+.certificate figure{
+  width: 70%;
+}
+
+.certificate img{
+  width: 100%;
+}
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */

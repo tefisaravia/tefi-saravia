@@ -10,7 +10,7 @@ function portfolioLink1() {
     } 
 function portfolioLink2() { 
     window.open( 
-    "https://tefisaravia.github.io/clock-project/", "_blank"); 
+    "https://tefisaravia.github.io/landing-page-makeup/", "_blank"); 
     } 
     function portfolioLink3() { 
         window.open( 
