@@ -762,6 +762,15 @@ footer {
 
 }
 
+#thank-you-response {
+  padding: 100px 0;
+  font-weight: 600;
+}
+
+#thank-you-response p{
+  background-color: var(--light-color);
+  margin: 0 20%;
+}
  /***** -------------------- CERTIFICATES ---- PAGE -------------------- *****/
 
  #certificates{
