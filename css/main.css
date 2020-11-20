@@ -12,7 +12,7 @@
    ========================================================================== */
 
 html {
-  color: #222;
+  color: var(--dark-color);
   font-size: 1em;
   line-height: 1.4;
 }
@@ -94,22 +94,21 @@ textarea {
  
 /* ---------- Brand Colors ------------
 
-light violet D8D8F6
-
-salmon FFDCD2
-orange FD6B54
 
 grey for font 535353;
-
-light blue d8dcff
-violet blue 4559B2
-navy blue 03256c
+periwinkle #C1D0F0
+navy blue #03256c
+accent color options:
+F0A202 Marigold
+DC7F9B blush
+d76d79 salmon
 */
 
 :root{
   --light-color:#C1D0F0;
   --dark-color: #03256c;
   --font-color: #535353;
+  --accent-color: #F0A202;
 }
 
 html {
@@ -183,8 +182,12 @@ header span {
   color: var(--light-color);
 }
 
-header a{
+#logo{
   color: var(--dark-color);
+}
+
+#logo:hover{
+  color: var(--accent-color);
 }
 
 
@@ -210,7 +213,7 @@ header nav ul{
 
 nav ul li a  {
   color: var(--dark-color);
-  border-bottom: solid 2px var(--dark-color);
+  border-bottom: solid 2px var(--light-color);
   font-weight: 400;
   padding: 10px 0;
   text-transform: uppercase;
@@ -219,8 +222,8 @@ nav ul li a  {
 
 nav ul li a:hover
 {
-  color: var(--light-color);
-  border-bottom: solid 2px var(--light-color);
+  color: var(--accent-color);
+  border-bottom: solid 2px var(--accent-color);
 }
 
 /* -------------------- Hero Section -------------------- */
@@ -228,7 +231,7 @@ nav ul li a:hover
 
 
 #hero-section {
-  background: url("../img/hero-image-mobile.jpg") center no-repeat white;
+  background: url("../img/hero-image-1.jpg") right no-repeat white;
   background-size: cover;
   padding: 20px 0 100px 0;
   margin-top: 200px;
@@ -243,17 +246,18 @@ nav ul li a:hover
 }
 
 #hero-section h1{
+  background-color: var(--accent-color);
   color: var(--light-color);
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: 600;
 }
 
 #hero-section h2 {
-  background-color: var(--light-color);
   border-radius: 5px;
   color: var(--dark-color);
-  font-size: 1.875em;
+  font-size: 1.5em;
   font-weight: 600;
+  margin-top: 50px;
   width: 80%;
 }
 
@@ -360,12 +364,12 @@ nav ul li a:hover
 }
 
 .portfolio-button {
-  background: var(--dark-color);
+  background: var(--accent-color);
   border: none;
   border-radius: 7px;
-  box-shadow: 3px 3px 18px var(--dark-color);
+  box-shadow: 3px 3px 18px var(--accent-color);
   /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
-  color: var(--light-color);
+  color: var(--dark-color);
   font-size: 0.813em;
   font-weight: 400;
   padding: 15px 20px;
@@ -448,14 +452,11 @@ footer {
 }
 
 .social-icons a:hover {
-  color: var(--light-color);
+  color: var(--accent-color);
   cursor: pointer;
   text-decoration: none;
 }
 
-.social-icons p:hover{
-  opacity: 0.9;
-}
 
 /* -------------------- Services Page -------------------- */
 
@@ -465,6 +466,7 @@ footer {
 }
 
 #services .title-container {
+  color: var(--dark-color);
   padding: 35px 0 70px 0;
 }
 
@@ -479,6 +481,7 @@ footer {
 
 #services i{
   background-color: var(--light-color);
+  color: var(--accent-color);
   border-radius: 50%;
   font-size: 2.5em;
   padding: 0.5em;
@@ -531,7 +534,7 @@ footer {
 
 .about-image-title{
   background: var(--light-color);
-  color: var(--dark-color);
+  color: var(--accent-color);
   font-size: 2em;
   margin: 0;
   position: absolute;
@@ -569,12 +572,12 @@ footer {
  }
 
 #skills{
-  background-color: var(--dark-color);
+  background-color: var(--light-color);
   padding-bottom: 50px;
 }
 
 #skills .title-container {
-  color: var(--light-color);
+  color: var(--dark-color);
   margin-bottom: 50px;
   padding: 25px 0;
   width: 100%;
@@ -587,7 +590,7 @@ footer {
 
  #skills p {
   align-items: center; 
-  color: var(--light-color);
+  color: var(--dark-color);
   display: flex;
   font-weight: 400;
   flex-flow: column wrap;
@@ -610,17 +613,18 @@ footer {
   font-weight: 400;
   flex-flow: column nowrap;
   margin-top: 20px;
+  font-size: 1em;
  }
 
  .certificate-button .portfolio-button {
-   background-color: var(--light-color);
+   background-color: var(--accent-color);
  }
 
  #skills i{
   align-items: center;
   border-radius: 20%;
-  background: var(--light-color);
-  color: var(--dark-color);
+  background: var(--dark-color);
+  color: var(--accent-color);
   display: flex;
   font-size: 3em;
   justify-content: center;
@@ -724,8 +728,8 @@ footer {
 }
 
 .contact-image-title{
-  background: var(--dark-color);
-  color: var(--light-color);
+  background: var(--light-color);
+  color: var(--accent-color);
   font-size: 2em;
   margin: 0;
   position: absolute;
@@ -917,9 +921,13 @@ footer {
 /* -------------------- Hero section  -------------------- */
 
   #hero-section {
+    background: url("../img/hero-image-mobile.jpg") right no-repeat white;
+    background-size: cover;
     padding: 200px 0 100px 0;
     margin-top: 100px;
   }
+
+
   
   .hero-content{
     display: flex;
@@ -931,12 +939,15 @@ footer {
   #hero-section h1 {
     background: var(--light-color);
     border-radius: 5px;
-    color: var(--dark-color)
+    color: var(--dark-color);
+    font-size: 2.5em;
   }
 
   #hero-section h2{
     background: var(--dark-color);
-    color: var(--light-color)
+    color: var(--accent-color);
+    font-weight: 400;
+    font-size: 1.875em;
   }
 
 
@@ -1146,6 +1157,11 @@ footer {
 
   /* -------------------- Servies  Section -------------------- */
 
+  #services i{
+    font-size: 3.5em;
+    padding: 0.5em;
+  }
+ 
   #services .button-container a{
     font-size: 1.4em;
   }
