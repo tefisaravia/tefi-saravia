@@ -377,6 +377,11 @@ nav ul li a:hover
   text-transform: uppercase;
 }
 
+.portfolio-button:hover{
+  cursor: pointer;
+  opacity: 0.85;
+}
+
 #all-projects-div {
   align-items: center;
   background-color: var(--light-color);
@@ -930,7 +935,7 @@ footer {
 /* -------------------- Hero section  -------------------- */
 
   #hero-section {
-    background: url("../img/hero-image-mobile.jpg") right no-repeat white;
+    background: url("../img/hero-image-2.jpg") right no-repeat white;
     background-size: cover;
     padding: 200px 0 100px 0;
     margin-top: 100px;
