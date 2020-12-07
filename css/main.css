@@ -278,6 +278,7 @@ nav ul li a:hover
   text-decoration: none;
   width: 50px;
   z-index: 999;
+  visibility: hidden;
 }
 
  /* -------------------- Info Section -------------------- */
@@ -767,6 +768,10 @@ footer {
 
 }
 
+.calendly-inline-widget {
+  margin-bottom: 50px;
+}
+
 #thank-you-response {
   padding: 100px 0;
   font-weight: 600;
@@ -973,6 +978,7 @@ footer {
   height: 60px;
   right: 30px;
   width: 60px;
+  visibility: visible;
 }
   /* -------------------- Info Section -------------------- */
 
